@@ -1,14 +1,15 @@
 # 笔记
 
-此仓库为 http://sandy1890.github.io 网站的内容源，该仓库的内容用于生成博客网站
+此仓库为 [http://sandy1890.github.io](http://sandy1890.github.io) 网站的内容源，该仓库的内容用于生成博客网站
 
 ### 初次运行
 
 * 需要node环境支持
-* 安装hex以
+* 安装hexo及初始化项目
 
 ```bash
 $ npm install -g hexo-cli
+$ npm install
 ```
 
 * 使用NexT主题
@@ -28,8 +29,7 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 
 ## 官方关于写作的文档　
 
-title: 写作
----
+### 写作
 你可以执行下列命令来创建一篇新文章。
 
 ``` bash
@@ -94,5 +94,5 @@ $ hexo new photo "My Gallery"
 
 
 ### 相关链接
-[hexo配置文档](https://hexo.io/zh-cn/docs/index.html)
-[NexT主题文档](http://theme-next.iissnan.com/getting-started.html)
+* [hexo配置文档](https://hexo.io/zh-cn/docs/index.html)
+* [NexT主题文档](http://theme-next.iissnan.com/getting-started.html)
