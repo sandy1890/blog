@@ -69,5 +69,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: https://github.com/sandy1890/sandy1890.git
+    repo: https://github.com/sandy1890/sandy1890.github.io.git
     branch: master
