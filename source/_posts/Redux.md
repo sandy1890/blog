@@ -1,5 +1,6 @@
 ---
 title: Redux概念
+date: 2016-05-19 16:37:56
 categories:
     - node
     - 前端

@@ -1,5 +1,6 @@
 ---
 title: kafka基础操作
+date: 2016-04-25 21:37:56
 categories:
     - 服务端
 ---

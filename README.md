@@ -1,6 +1,6 @@
 # 笔记
 
-此仓库为 [http://sandy1890.github.io](http://sandy1890.github.io) 网站的内容源，该仓库的内容用于生成博客网站
+此仓库为 [https://sandy1890.github.io](https://sandy1890.github.io) 网站的内容源，该仓库的内容用于生成博客网站
 
 ### 初次运行
 
