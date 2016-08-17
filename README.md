@@ -25,8 +25,35 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 
 * 将写作的 md 文件放到　source/_posts　目录下
 * scaffolds 目录下是模版文件
-* 写作完成后使用deploy.sh脚本进行发布
+* 本地生成
+``` bash
+# hexo原生方式
+$ hexo generate
 
+# npm 命令
+$ npm run gen
+```
+
+* 本地预览,运行命令后浏览器中打开命令行输出的地址，如:http://localhost:4000/
+
+```bash
+$ npm run server
+> hexo s
+
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+
+```
+
+* 写作完成后可以使用以下 `` npm 命令``或 ``deploy.sh`` 脚本进行发布
+
+```bash 
+# deploy.sh脚本
+$ sh deplsy.sh
+
+# node命令
+$ npm run deploy
+```
 ## 官方关于写作的文档　
 
 ### 写作
@@ -92,6 +119,42 @@ $ hexo new photo "My Gallery"
 `date` | 文件建立日期
 
 
+## GitHub Pages　
+
+###　使用GitHub搭建免费的个人博客 
+
+在这里我使用了两个仓库，一个用于存放写作源码，另外一个用于发布博客
+
+具体操作步骤为:
+
+* 在github创建一个用于存放heox项目的仓库，仓库名随意，用于将写作内容提交到这个仓库保存
+
+* 在github创建另一个名为 ``{你的用户名}.github.io`` （将``{你的用户名}``替换为你自己的账号，注意，这个仓库名称必须如此）新的仓库,这个仓库用于接收hexo提交上来的博客页面,github会自动将此仓库的master分支作为以 https://{你的用户名}.github.io 域名的空间 [参看:https://help.github.com/articles/user-organization-and-project-pages/](https://help.github.com/articles/user-organization-and-project-pages/)
+
+* 配置_config.yml中 deploy 项 详细操作查看[官方文档](https://hexo.io/zh-cn/docs/deployment.html)
+
+```ini
+deploy:
+    type: git
+    repo: https://github.com/sandy1890/sandy1890.github.io.git
+    branch: master
+```
+
+
+### GitHub pages 限制
+We recommend GitHub Pages users follow these limits:
+
+主页空间容量1GB
+GitHub Pages source repositories have a recommended limit of 1GB .
+Published GitHub Pages sites have a 1GB recommended limit.
+
+每月100GB流量或100,000请求
+GitHub Pages sites have a recommended bandwidth limit of 100GB or 100,000 requests per month.
+
+限制每小时10次构建
+GitHub Pages sites have a recommended limit of 10 builds per hour.
+
+GitHub Pages官方说明 [https://help.github.com/articles/what-is-github-pages](https://help.github.com/articles/what-is-github-pages)
 
 ### 相关链接
 * [hexo配置文档](https://hexo.io/zh-cn/docs/index.html)
