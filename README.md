@@ -26,6 +26,14 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 * 将写作的 md 文件放到　source/_posts　目录下
 * scaffolds 目录下是模版文件
 * 本地生成
+`注意`:　发布之前需要先设置一下 `_config.yml` 配置文件中的 deploy 选项,详细的配置查看官方文档[https://hexo.io/docs/deployment.html](https://hexo.io/docs/deployment.html)
+```ini
+deploy:
+    type: git
+    repo: https://github.com/sandy1890/sandy1890.github.io.git
+    branch: master
+```
+
 ``` bash
 # hexo原生方式
 $ hexo generate
@@ -54,6 +62,7 @@ $ sh deplsy.sh
 # node命令
 $ npm run deploy
 ```
+
 ## 官方关于写作的文档　
 
 ### 写作

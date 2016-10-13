@@ -1,8 +1,10 @@
 ---
 title: Redux概念
 date: 2016-05-19 16:37:56
+tags: 
+    - nodejs
+    - react
 categories:
-    - node
     - 前端
 ---
 

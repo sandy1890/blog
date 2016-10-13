@@ -1,7 +1,8 @@
 ---
 title: 解决php的xdebug和composer冲突
 date: 2016-05-13 11:52:10
-tags: php
+tags:
+    - PHP
 ---
 ## [composer](http://www.phpcomposer.com)
 Composer 是 PHP 的一个依赖管理工具。它允许你申明项目所依赖的代码库，它会在你的项目中为你安装他们
