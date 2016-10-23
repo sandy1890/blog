@@ -7,3 +7,4 @@ public/
 .deploy*/
 themes/
 npm-debug.log
+npm-debug.log*
