@@ -87,7 +87,7 @@ src/
 
 前面介绍环境变量 GOPATH 的时候提到，为了避免每次新建一个项目都去修改系统环境变量的麻烦。我们可以使用一个脚本来设置特定项目的 GOPATH 变量。
 
-install.sh 脚本如下：
+install.sh 脚本:
 
 ```bash
 #!/bin/bash
@@ -102,18 +102,38 @@ OLDGOPATH="$GOPATH"
 #将GOPATH设置为当前项目
 export GOPATH="$CURDIR"
 
-
 #以下为特定项目编译需要运行的命令
 gofmt -w src
 go build -o bin/hello src/hello.go
 #以上为特定项目命令
-
 
 #还原系统GOPATH变量值
 export GOPATH="$OLDGOPATH"
 echo '编译完成'
 ```
 
+Windows 下的 install.bat 脚本(未验证):
+
+```bash
+@echo off
+
+setlocal
+
+if exist install.bat goto ok
+    echo 安装脚本 install.bat 必须在项目根目录中运行
+goto end
+
+: ok
+
+set OLDGOPATH=%GOPATH%
+set GOPATH=%~dp0
+
+gofmt -w src
+go build -o bin/hello src/hello.go
+
+:end
+echo 编译完成
+```
 
 ### hello,world
 
@@ -132,7 +152,7 @@ helloworld/
 ```
 
 
-* 编写　`src\hello.go` 文件
+* 编写 `src\hello.go` 文件
 
 ```go
 package main
@@ -145,7 +165,7 @@ func main() {
 ```
 
 
-* 编写　`install.sh` 文件
+* 编写 `install.sh` 文件
 
 ```bash
 #!/bin/bash
@@ -198,3 +218,7 @@ godoc -http=:8080 -v
 ```bash
 go tool tour
 ```
+
+参考资源：
+[官方文档中文版](http://docscn.studygolang.com/doc/install)
+[Go项目的目录结构](http://blog.studygolang.com/2012/12/go%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/)
