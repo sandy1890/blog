@@ -73,7 +73,7 @@ scheme: Mist
 # - Introduce in 5.0.1
 # ---------------------------------------------------------------
 font:
-  enable: true
+  enable: false
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host: http://fonts.useso.com
@@ -350,7 +350,8 @@ fancybox: true
 # Be aware that you should use the same version as internal ones to avoid potential problems.
 vendors:
   # Internal path prefix. Please do not edit it.
-  _internal: vendors
+  # _internal: vendors
+  _internal: lib
 
   # Internal version: 2.1.3
   jquery:
