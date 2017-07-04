@@ -10,6 +10,9 @@
 ```bash
 $ npm install -g hexo-cli
 $ npm install
+
+# 或
+
 ```
 
 * 使用NexT主题
@@ -21,7 +24,7 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 ```
 
 
-###　写作及发布
+### 写作及发布
 
 * 将写作的 md 文件放到　source/_posts　目录下
 * scaffolds 目录下是模版文件

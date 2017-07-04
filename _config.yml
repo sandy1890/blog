@@ -64,7 +64,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-duoshuo_shortname: sandy1890
+# duoshuo_shortname: sandy1890
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
